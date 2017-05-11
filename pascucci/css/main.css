@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* { margin:0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+#main {
+    width: 1280px;
+    height: 540px;
+    overflow: hidden;
+}
+#main .maindown {
+    width: 100%;
+    height: 50px;
+    background: green;
+    float: left;
+}
+#main .maindown .member li {
+    display: inline-block;
+}
+#main .maindown .member li:first-child {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background: #696969;
+    float: left;
+}
+#main .maindown .member li:first-child span {
+    float: left;
+    line-height: 52px;
+    margin-left: 170px;
+}
+#main .maindown .member li:first-child div.join {
+    width: 195px;
+    height: 30px;
+    border: 3px solid white;
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+}
+#main .maindown .member li:first-child .join a {
+    color: white;
+}
+#main .maindown .member li:last-child {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background: #0b0b0b;
+    line-height: 52px;
+}
+#main .maindown .member li:last-child span {
+    margin-left: 20px;
+}
+            /*content영역*/
+#content {    
+    background:#eaeaea;
+}
+#content .content1 {
+    height: 600px;
+    position: relative;
+}
+#content .content1 .coffee1 {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+#content .content1 h3 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 350px;
+    left: 300px;
+}
+#content .content1 .s1 {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 250px;
+    left: 300px;
+}
+#content .content1 ul {
+    font-size: 20px;
+    position: absolute;
+    bottom: 150px;
+    left: 300px;
+}
+#content .content1 ul li {
+    color: #c0925a;
+    font-weight: bold;
+}
+#content .content1 .look1 {
+    width: 150px;
+    height: 25px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 50px;
+    left: 380px;
+    font-size: 20px;
+    text-align: center;
+}
+#content .content1 .look1 a {
+    vertical-align: middle;
+    line-height: 20px;
+    color: white;
+}
+#content .content2 {
+    height: 665px;
+    position: relative;
+}
+#content .content2 .introduce {
+    overflow: hidden;
+}
+#content .content2 .house {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: cafe 2s linear;
+}
+@keyframes house {
+	0% { opacity:0; bottom:-100px; }
+	100% { opacity:1; bottom:0; }
+}
+#content .content2 h3 {
+    font-size: 40px;
+    position: absolute;
+    bottom: 370px;
+    left: 120px;
+}
+#content .content2 .text {
+    position: absolute;
+    bottom: 230px;
+    left: 120px;
+    font-size: 25px;
+    line-height: 40px;
+}
+#content .content2 .text span {
+    font-weight: bold;
+    font-size: 28px;
+}
+#content .content2 .look2 {
+    width: 130px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    bottom: 100px;
+    left: 170px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#content .content2 .look2 a {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#content .content3 {
+    height: 681px;
+    position: relative;
+}
+#content .content3 .cafe {
+    position: absolute;
+    top:0;
+    left:0;
+    animation: cafe 2s ease-in-out;
+}
+@keyframes cafe {
+	0% { opacity:0; bottom:-100px; }
+	100% { opacity:1; bottom:0; }
+}
+#content .content3 h3 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 400px;
+    left: 700px;
+}
+#content .content3 span {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 320px;
+    left: 700px;
+    font-weight: bold;
+}
+#content .content3 h4 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 250px;
+    left: 700px;
+    font-weight: bold;
+}
+#content .content4 {
+    height: 640px;
+}
+#content .content4 h3 {
+    text-align: center;
+    position: relative;
+    bottom: 480px;
+    right: 350px;
+    font-size: 50px;
+    color: white;
+    line-height: 60px;
+}
+#content .content4 .knowhow {
+    height: 80px;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 450px;
+    left: 130px;
+}
+#content .content4 .solution {
+    width: 200px;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 400px;
+    left: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+#content .content4 .solution a {
+    color: white;
+}
+#content .content4 .question {
+    width: 200px;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 442px;
+    left: 330px;
+    line-height: 40px;
+    text-align: center;
+}
+#content .content4 .question a {
+    color: white;
+}

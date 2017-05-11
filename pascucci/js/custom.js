@@ -1,0 +1,1 @@
+$('.box_skitter_large').skitter({dots: true});

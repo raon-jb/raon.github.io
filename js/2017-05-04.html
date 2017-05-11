@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .result { font-weight: bold;}
+    #payment {text-decoration: underline;}
+</style>
+<body>
+
+
+    <!--<h2>Table of Factorials</h2>
+    <script>
+        var fact = 1;
+        for ( var i = 1; i < 10; i++){
+            fact = fact * i;
+            document.write(i + "! = " + fact + "<br>");
+        }
+    </script>-->
+
+
+    <!-- <button onclick="alert('you clicked the button');">Click here</button> -->
+
+
+    <form name="loandata">
+        <table>
+            <tr>
+                <td><b>Enter Loan Information:</b></td>
+            </tr>
+            <tr>
+                <td>Amount of the loan (any currency):</td>
+                <td>
+                    <input type="text" name="principal" onchange="calculate();">
+                </td>
+            </tr>
+            <tr>
+                <td>Annual percentage rate of interest:</td>
+                <td>
+                    <input type="text" name="interest" onchange="calculate();">
+                </td>
+            </tr>
+            <tr>
+                <td>Repayment period in years:</td>
+                <td>
+                    <input type="text" name="years" onchange="calculate();">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="compute" onclick="calculate();"></td>
+            </tr>
+            <tr>
+                <td><b>Payment Information:</b></td>
+            </tr>
+            <tr>
+                <td>Your monthly payment:</td>
+                <td>$<span class"result" id="payment"></span></td>
+            </tr>
+            <tr>
+                <td>Your total payment:</td>
+                <td>$<span class"result" id="total"></span></td>
+            </tr>
+            <tr>
+                <td>Your total interest payments:</td>
+                <td>$<span class"result" id="totalinterest"></span></td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript">
+        function calculate() {
+            var principal = document.loandata.principal.value;
+            var interest = document.loandata.interest.value / 100 / 12;
+            var payments = document.loandata.years.value * 12;
+
+            var x = Math.pow(1 + interest, payments);
+            var monthly = (principal * x * interest) / (x-1);
+
+            var payment = document.getElementById("payment");
+            var total = document.getElementById("total");
+            var totalinterest = document.getElementById("totalinterest");
+
+            if (isFinite(monthly)){
+                payment.innerHTML = monthly.toFixed(2);
+                total.innerHTML = (monthly * payments).toFixed(2);
+                totalinterest.innerHTML = ((monthly * payments) - principal).toFixed(2);
+            } else {
+                payment.innerHTML = "";
+                total.innerHTML = "";
+                totalinterest.innerHTML = "";
+            }
+        }
+    </script>
+
+    <!-- <script>
+        document.write("<h2>Table of Fibonacci Number</h2>");
+        for ( var i = 0, j = 1, k = 0, fib = 0; i < 50; i++, fib=j + k, j=k, k = fib){
+            document.write("Fibonacci (" + i + ") = " + fib);
+            document.write("<br>");
+        }
+    </script> -->
+
+    <!-- <script>
+        var x = 5;
+        var y = 2;
+        sine_if_x = Math.sin(x);
+        hypot = Math.sqrt(x*x + y*y);
+        console.log(sine_if_x);
+        console.log(hypot);
+    </script> -->
+
+    <!-- <script>
+        document.write("'Your\'re right, it can\'t be a quote'");
+    </script> -->
+
+    <!-- <script>
+        msg = "Hello, " + "world";
+        greeting = "Welcome to my blog," + " " + name;
+        document.write(msg + greeting);
+    </script> -->
+
+    <!-- <script>
+        var s = "hello";
+        var last_char = s.charAt(s.length - 1);
+        console.log(s.length);
+        console.log(last_char);
+        var sub = s.substring(1,4);
+        console.log(sub);
+        var i = s.indexOf('a');
+        console.log(i);
+    </script> -->
+
+    <!-- <script>
+        var n = 100;
+        var s = n + " bottles of beer on the wall.";
+        console.log(s);
+        var n_as_string = n + "";
+        var number = 100;
+        var string_value = String(number);
+    </script> -->
+
+    <!-- <script>
+        var n = 17;
+        binary_string = n.toString(2);
+        octal_string = "0" + n.toString(8);
+        hex_string = "0x" + n.toString(16);
+        console.log(binary_string);
+        console.log(octal_string);
+        console.log(hex_string);
+    </script> -->
+
+    <!-- <script>
+        // for ( var i = 0; i < 10; i++) document.write(i, "<br>");
+        // for ( var i = 0, j = 10; i < 10; i++, j++) document.write(i=j, "<br>");
+        for ( var i in o) document.wirte(i, "<br>");
+    </script> -->
+
+    <!-- <script>
+        // var scope = "global";
+        // function checkscope() {
+        //     var scope = "local";
+        //     document.write(scope);
+        // }
+        // checkscope();
+
+        scope = "global";
+        function checkscope() {
+            scope = "local";
+            document.write(scope);
+            myscope = "local";
+            document.write(myscope);
+        }
+        checkscope();
+        document.write("<br>" + scope + "<br>");
+        document.write(myscope);
+    </script> -->
+
+    <!-- <script>
+        var scope = "global scope";
+        function checkscope() {
+            var scope = "local scope";
+            function nested() {
+                var scope = "nested scope";
+                document.write(scope);
+            }
+            nested();
+        }
+        checkscope();
+    </script> -->
+
+    <!-- <script>
+        function test(o) {
+            var i = 0;
+            if (typeof o == "object") {
+                var j = 0;
+                for ( var k = 0; k < 10; k++){
+                    document.write(k);
+                }
+                document.write(k);
+            }
+            document.write(j);
+        }
+    </script> -->
+
+    <!-- <script>
+        var scope = "global";
+        function f() {
+            alert(scope);
+            var scope = "local";
+            alert(scope);
+        }
+        f();
+
+        function f() {
+            var scope;
+            alert(scope);
+            var scope = "local";
+            alert(scope);
+        }
+        f();
+    </script> -->
+</body>
+</html>

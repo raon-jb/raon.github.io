@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* { margin:0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0;}
+body {
+    width: 1280px;
+    margin: 0 auto;
+}
+#header {
+    width: 1280px;
+    height: 66px;
+}
+#header .header_area {
+    width: 1280px;
+    height: 66px;
+    position: fixed;
+    z-index: 99999;
+    background: white;
+}
+#header .header_area .logo img {
+    overflow: hidden;
+    float: left;
+    margin-left: 120px;
+}
+#header ul {
+    float: right;
+    margin-right: 100px;
+}
+#header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 25px;
+    margin-right: 50px;
+}
+#header ul li a {
+    color: #161719;
+    font-size: 15px;
+}
+                    /*-----footer영역-----*/
+#footer {
+    width: 100%;
+    height: 430px;
+}
+#footer .topfooter {
+    width: 100%;
+    height: 290px;
+    float: left;
+    border-top: 4px solid red;
+}
+#footer .topfooter .list2 {
+    margin: 0 auto;
+    width: 920px;
+    height: 290px;
+    margin-left: 280px;
+}
+#footer .topfooter .list2 ul {
+    width: 110px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+#footer .topfooter .list2 ul .first {
+    font-size: 15px;
+    font-weight: bold;
+}
+#footer .topfooter .list2 ul li a {
+    color: gray;
+}
+#footer .topfooter img {
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+#footer .topfooter ul {
+    width: 200px;
+    height: 100px;
+}
+#footer .downfooter {
+    width: 100%;
+    height: 140px;
+    background: #2a2a2a;
+    float: left;
+}
+#footer .downfooter .df_area {
+    text-align: center;
+    line-height: 40px;
+}
+#footer .downfooter .list {
+    position: relative;
+    top: 10px;
+}
+#footer .downfooter .list li {
+    display: inline-block;
+    margin: 0 30px;
+}
+#footer .downfooter .list li a {
+    color: white;
+}
+#footer .downfooter .address {
+    position: relative;
+    top: 10px;
+    color: white;
+}
+#footer .downfooter .address li {
+    display: inline-block;
+}
+#footer .downfooter .copy {
+    position: relative;
+    top: 10px;
+    color: white;
+}
+#footer .downfooter .copy span {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}

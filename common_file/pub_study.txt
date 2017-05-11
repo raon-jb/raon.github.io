@@ -1,0 +1,1982 @@
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+  ★목록
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+	1. 내가 쓰는 에디터 단축키와 플러그인
+	2. DTD 선언
+	3. 메타태그
+	4. ol, ul, dl (목록 Element)
+	5. (X)HTML Elements 20가지 이상 알아보기
+	6. HTML5 Elements
+	7. HTML5 New Element
+	8. 배우고 싶은 기술이나 목표
+	9. 블록, 인라인, 인라인블록
+	10. 나만의 reset, common css 만들기
+	11. css2 css3 브라우저 고려
+	12. CSS Properties 20가지 이상 알아보기
+	13. css 약식속성
+	14. 크로스브라우징 테스터환경 만들기
+	15. 싱글클래스, 더블클래스 어떨때 사용하는지 확인하기
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+  ★과제1
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  서브라임텍스트
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶단축키
+	cmd + k + b : 사이드바 열기
+	cmd + x : 현라인 삭제
+	ctrl + k : 현라인의 현위치 이후로 삭제
+	cmd + enter : 다음 라인에 빈줄 추가
+	cmd + shift + enter : 이전 라인에 빈줄 추가
+	cmd + shift + d : 현라인(혹은 블락)복사해서 붙히기
+	ctrl + cmd + UP/DOWN : 현재라인 이동
+	cmd + ] : 들여쓰기
+	cmd + [ : 내어쓰기
+	cmd + / : 주석처리/주석해제
+	cmd + shift + v : 들여쓰기 맞춰서 붙혀넣기
+	cmd + l : 선택블럭을 다음 라인까지 추가
+	ctrl + shift + UP/DOWN : 세로영역 수정
+	cmd + f : 검색
+	cmd + Alt + f : 바꾸기
+	cmd + t, cmd + p : 파일명으로 탭 찾기
+	cmd + shift + f : 특정 폴더나 파일에서 내용 검색
+	ctrl + g : 입력한 라인으로 이동
+	cmd + i : 현재 단어 찾기
+	cmd + shift + g : 현재 단어 모두 찾아서 선택 영역으로 만듦
+	ctrl + shift + m : 괄호 안의 내용을 모두 선택
+	cmd + option + LEFT/RIGHT : 탭 이동
+	ctrl + m : 여는 괄호/ 닫는 괄호로 이동
+	cmd + shift + t : 마지막에 닫은 탭 다시 오픈
+	cmd + = : 폰트 크게
+	cmd + - : 폰트 작게
+	cmd + shift + p : prompt 열기
+	ctrl + ` : sublime console 열기
+	cmd + Alt + 1,2,3,4 : 세로분할 갯수
+	cmd + Alt + 5 : 그리드로 보기
+	ctrl + 1,2,3,4 : 세로분할된 창 선택
+	ctrl + shift + 1,2,3,4 : 현재 탭을 세로분할된 창으로 이동
+
+▶Package Control
+	서브라임에서는 ‘패키지'라는 것이 '플러그인'의 개념이다.
+	패키지 매니저는 이름 그대로 서브라임이 지원하는 패키지를 관리할 수 있는 녀석이다.
+	콘솔창 호출 : ctrl+`
+
+	많이 사용하는 명령
+	Install Package: 패키지를 설치한다.
+	List Package: 설치된 패키지 목록을 확인한다.
+	Remove Package: 설치된 패키지를 삭제한다.
+	Update Package: 설치된 패키지에 업데이트사항이 있는지 확인하고, 업데이트 내역이 있을 경우 업데이트한다.
+
+▶유용한 패키지 목록
+	1. BracketHighlighter
+	블럭영역의 시작과 끝을 눈에 좀 더 잘 띄게(?) 해준다. 기본은 옅은 밑줄만 쳐져 있어 분간이 어려웠다.
+	https://github.com/facelessuser/BracketHighlighter
+
+	2. Theme - Soda
+	조금은 뚱뚱한 느낌이 드는 기본 테마를 변경해준다.
+	Theme는 에디터 내부 문법강조 컬러를 변경해주는 Color Scheme과는 다른 개념으로, 프로그램 전체의 룩앤필을 칭한다.
+	https://github.com/buymeasoda/soda-theme/
+
+	3. RailsCasts Theme
+	위의 Theme와는 다르게 이건 Color Scheme을 변경해준다. RailsCast 스타일이다.
+	현재까지 써본것중엔 기본으로 포함된 Twilight과 함께 제일 편안한 색상이다.
+	https://github.com/talltroym/sublime-theme-railscasts
+
+	4. Package Control
+	위에서 살펴보았다. 다양한 패키지를 커맨드 팔렛트에서 관리할 수 있도록 해준다.
+	http://wbond.net/sublime_packages/package_control
+
+	5. Quick File Creator
+	커맨드 팔렛트에서 파일, 폴더 등을 생성할 수 있다. 마우스 안녕~
+	https://github.com/noklesta/SublimeQuickFileCreator
+
+	6. AdvancedNewFile
+	[2013.07.11] ST3 호환성문제로 위의 Quick File Creator를 대체할 녀석을 찾던 중 발견.
+	이쪽이 더 직관적이고 사용이 편하다. 커맨드 한번으로 파일생성 가능.
+	hello/im/arkist/msg.markdown식으로 입력하면 폴더들과 파일이 한번에 생성된다.
+	https://github.com/skuroda/Sublime-AdvancedNewFile
+
+	7. Emmet (ZenCoding)
+	젠코딩을 가능하게 해준다. html 코딩할 때 이거 없으면 피곤하다.
+	[2012.01.26] ZenCoding이 Emmet으로 진화했다. Fuzzy Search 기능 최고!
+	https://emmet.io/
+
+	Emmet 스피드코딩
+	html:5 or ! for an HTML5 doctype
+	p.class // p#id
+	h1{내용} = <h1>내용</h1>
+	a[href=#]  -> <a href="#"></a>
+	h1+h2  -> h1과 h2가 생성
+	h1>h2 -> h2가 h1 child로 생성
+	h1>h2^span -> h1아래에 h2가 생성 h2상위의 span 생성. 즉 , h1다음에 span 이 생성
+	(.divclass>h1)+(.divclass2>h2)   -> divclass의 그룹과 divclass2의 그룹이 생성됨
+	기본적으로 .name 하면 <div class="name"> 이 생성되나 ul 태그 아래에서 .name 해주면 <li class="name"> 이 생성된다
+	ul>li*3 -> li가 세개 생성
+
+	Emmet 넘버링 
+	ul>li.webcreate$*3
+	<ul>
+	<li class="webcreate1"></li>
+	<li class="webcreate2"></li>
+	<li class="webcreate3"></li>
+	</ul>
+
+	8. SCSS
+	SCSS를 위한 문법강조를 지원한다.
+	https://github.com/MarioRicalde/SCSS.tmbundle
+
+	9. ERB Insert and Toggle Commands
+	ERB 블럭 입력을 도와준다.
+	https://github.com/buymeasoda/soda-theme/
+
+	10. SublimeCodeIntel
+	코드인텔리전스 기능이다. 지원언어는 다음과 같다.
+	PHP, Python, RHTML, JavaScript, Smarty, Mason, Node.js, XBL, Tcl, HTML, HTML5, TemplateToolkit,
+	XUL, Django, Perl, Ruby, Python3
+	https://github.com/Kronuz/SublimeCodeIntel
+
+	11. Automatic Backups
+	파일을 저장할때마다 백업본을 생성해준다.
+	[2013.07.11] ST3 호환성을 위해 AutoBackups로 대체.
+	https://github.com/joelpt/sublimetext-automatic-backups
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  DTD 선언
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+	HTML 문서는 반드시 DTD를 선언한다.
+	독타입 버전별로 지원하는 태그가 달라서 HTML문서가 어떤 버전으로 작성 되었는지 미리 선언하여
+	웹브라우저가 내용을 올바르게 표시할 수 있게 해주는 것이다. 독타입은 태그가 아니며
+	HTML문서 작성시 독타입 선언문을 추가하는 것이 좋다.
+
+	문서타입에 (X)HTML의 버전과 문서형을 지정하는데, 다양한 플랫폼 지원을 위해 XHTML 1.0,
+	하위 브라우져 호환성을 위해 Transitional 모드를 권장하고 있다. (Transition 모드를 사용하더라도,
+	웹표준 준수율의 향상을 위해 가급적 Strict 모드의 문법을 사용하는 것을 권장함)
+
+▶기본 DTD
+	▷<!DOCTYPE html>
+	HTML5는 SGML에 기본으로 하지 않기 때문에, DTD의 참조를 요하지 않는다.
+	<!DOCTYPE>은 웹 브라우저가 HTML이 무슨 버전인지 알수 있게 해준다.
+
+▶기타 DTD
+	사용 중인 서비스를 부분 개편하거나 완전히 개편하더라도 기존의 HTML/CSS 데이터 의존도가 높다면,
+	기존과 동일한 DTD를 사용할 수 있다. 작성 예는 다음과 같다.
+	▷HTML 4.01 Transitional (HTML 일반)
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+	▷XHTML 1.0 Transitional (XHTML 권장)
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+	▷Quirks Mode
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	
+▶주의
+	아래와 같은 경우 DTD 설정별 표준 문법으로 마크업 하더라도 브라우저에서 Quirks Mode로
+	인식하여 바르게 해석되지 않으므로 주의한다.
+	▷DTD가 선언되지 않은 경우(html 태그로 문서 시작)
+	<html>
+
+	▷선언한 DTD 앞에 다른 문자가 오는 경우
+	<!-- //html 문서 시작 -->
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+		
+▶독타입별 지원하는 태그 목록
+	http://www.w3schools.com/tags/ref_html_dtd.asp
+	
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  메타태그
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+	추가로 중요한 정보를 다양한 방법으로 문서에 대해 - HTML은 메타 데이터를 지정할 수 있습니다.
+	메타 요소 등 저자, 만료일, 키워드의리스트, 문서 작성자와 같은
+	HTML 문서의 속성을 기술하는 이름 / 값 쌍을 포함 할 수 있습니다.
+
+	<메타> 태그와 같은 추가 정보를 제공하는데 사용된다. 이 태그는 빈 요소이며, 그래서 닫는 태그가 없습니다.
+	그러나 그 속성 내에서 정보를 전달한다. 당신이 포함하는 경우보기의 모양 지점에서, 그것은 중요하지 않습니다.
+	그래서 당신의 문서에 어떤 정보 유지하려면 일반적으로 하나 이상의 메타 태그를 포함 할 수 있습니다.
+	메타 태그는 문서의 외모에 영향을주지 않습니다.
+	
+▶Attribute
+	Name : 속성에 대한 이름을 지정합니다. 무엇이든지 될 수 있습니다. 예를 들면, 키워드, 설명, 저자 등 포함
+	content : 속성의 값을 지정합니다.
+	scheme : (content 속성에 선언) 속성의 값을 해석하는 방식을 지정합니다.
+	http-equiv : HTTP 응답 메시지 헤더에 사용됩니다. 예를 들어, HTTP-당량 페이지를 새로 고침 또는
+	쿠키를 설정하는데 사용될 수있다.
+	값은, 새로 고침 만료 콘텐츠 유형 및 설정 쿠키를 포함한다.
+	
+▶키워드 지정
+	중요한 문서와 관련된 키워드와 목적을 검색하는 웹 페이지의 색인을 생성하는 동안 나중에 이러한 키워드가 검색 엔진에 의해
+	사용을 지정하는 <메타> 태그를 사용할 수 있습니다.
+	<meta name="keywords" content="HTML, Meta Tags, Metadata" />
+	
+▶자료 설명
+	당신은 문서에 대한 간단한 설명을 제공하는 <메타> 태그를 사용할 수 있습니다.
+	목적을 검색하는 웹 페이지의 색인을 생성하면서 다시 여러 검색 엔진을 사용할 수 있습니다.
+	<meta name="description" content="Learning about Meta Tags." />
+	
+▶문서 개정일
+	당신은 마지막으로이 문서가 업데이트 된시기에 대한 정보를 제공하는 <메타> 태그를 사용할 수 있습니다.
+	웹 페이지를 새로 고침 동안에이 정보는 다양한 웹 브라우저에서 이용 될 수있다.
+	<meta name="revised" content="Tutorialspoint, 3/7/2014" />
+	
+▶문서 새로 고침
+	웹 페이지가 자동으로 새로 고침 계속됩니다 후 기간을 지정할 수 있습니다.
+	<meta http-equiv="refresh" content="5" />
+	
+▶페이지 리디렉션
+	다른 웹 페이지로 페이지를 리디렉션 <메타> 태그를 사용할 수 있습니다.
+	당신이 초의 특정 숫자 후 페이지를 리디렉션 할 경우에도 기간을 지정할 수 있습니다.
+	<meta http-equiv="refresh" content="5; url=http://www.tutorialspoint.com" />
+	
+▶쿠키 설정
+	쿠키는 컴퓨터의 작은 텍스트 파일에 저장된 데이터이며, 이는 웹 애플리케이션의 요구에 기초하여
+	다양한 정보를 추적하는 웹 브라우저와 웹 서버간에 교환된다.
+	사이트 방문자를 추적하는 웹 서버에서 사용할 수있는 클라이언트 측 나중에이 정보에 쿠키를 저장하는 <메타> 태그를
+	사용할 수 있습니다.
+	<meta http-equiv="cookie" content="userid=xyz; expires=Wednesday, 08-Aug-15 23:59:59 GMT;" />
+
+▶설정 저자 이름
+	당신은 메타 태그를 사용하여 웹 페이지에서 작성자 이름을 설정할 수 있습니다.
+	<meta name="author" content="Mahnaz Mohtashim" />
+
+▶문자 집합을 지정합니다
+	사용자는 웹 페이지 내에서 사용되는 문자 집합을 지정하는 <메타> 태그를 사용할 수 있습니다.
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  ol, ul, dl (목록 Element)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶li
+	의미 : 목록에서 목록 아이템을 표시한다.
+	사용 : 특별한 경우(중첩 메뉴등)가 아니라면 li 안에 다른 목록 Element 작성을 금한다.
+
+▶ul
+	의미 : 순서가 정의되지 않는 목록을 작성한다.
+	사용 : 자식 element로는 li만 포함이 허용된다.
+
+▶ol
+	의미 : 순서가 정의된 목록을 작성한다.
+	사용 : ul과 마찬가지로 자식 element로는 li만 포함이 허용된다.
+
+▶dl
+	정의형(사전형)의 목록을 작성한다.
+	포함하는 아이템으로 dt및 dd만 포함 할 수 있다.
+
+▶dt
+	정의형 목록의 타이틀을 뜻한다.
+
+▶dd
+	정의형 목록의 설명을 뜻한다.
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  (X)HTML Elements
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶전역 구조화 Element
+- <html>
+	class Attribute 사용은 하지 않는다.
+	XHTML dtd 사용시에는 다음과 같이 XML namespace 및 lang attribute를 선언해준다.
+
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+- <head>
+	meta, title, link, style, script 순으로 Element 를 선언한다
+
+- <meta>
+	문서의 기본 인코딩 및 뷰포트 등을 선언한다.
+	(뷰포트는 모바일 서비스의 경우에만 선언)
+
+- <title>
+	현재 페이지의 제목을 선언한다.
+
+- <link>
+	rel, type, href 순서로 attribute를 선언한다
+
+	<link rel="stylesheet" type="text/css" href="common.css">
+
+- <style>
+	type attribute를 선언한다
+	하위에 선언이 되는 CSS는 <style> Element보다 1depth 들여쓴다.
+
+	<style type="text/css">
+	body{}
+	...
+	</style>
+
+- <script>
+	type, src 순서로 attribute를 선언한다
+	하위에 선언이 되는 CSS는 <style> Element보다 1depth 들여쓴다.
+	script의 선언 위치는 head내에 선언하는 것을 원칙으로 하되, 성능상의 이슈 및 특별한 경우는 선언위치를 변경한다.
+
+	<script type="text/javascript" src="jigu.js"></script>
+	<script type="text/javascript">
+	    var d=document;
+	    ......
+	</script>
+
+- <body>
+	body Element에는 다른 attribute를 사용하지 않는 것을 원칙으로 한다.
+
+▶제목, 문단, 구분선 Element
+- Heading
+	의미 : HTML 구조상 문서 내부의 컨텐츠 제목을 정의한다.
+	사용 : 각 부분별로 논리적인 규칙에 맞추어 Heading의 계층을 구성한다.
+
+- P
+	의미 : 텍스트의 문단 요소로 사용한다.
+	사용 : 의미상 문단을 구분하기 위한 용도로 사용하며, 시작 효과를 위해서나 문단으로써 의미가 없는 부분에 사용 하지 않는다.
+
+- hr
+	의미 : 문서 내에 구분선을 표시한다.
+	사용 : 의미상으로 컨텐츠간의 경계를 표시할때 사용한다.
+
+▶표 Element
+	표는 다음과 같이 작성한다.
+	<table cellspacing="0" cellpadding="0" summary="날짜별로 부산국제영화제 롯데시네마 센텀시티점에서 상영하는 영화의 제목과 상영시간, 예매 링크를 안내합니다">
+	    <caption>롯데시네마 센텀시티점 BIFF 상영시간표</caption>
+	    <colgroup>
+	        <col width="113" />
+	        <col width="232" />
+	        <col width="261" />
+	        <col width="63" />
+	    </colgroup>
+ 	    <thead>
+ 	    <tr>
+	        <th scope="col">날짜</th>
+	        <th scope="col">영화명</th>
+	        <th scope="col">상영시간</th>
+	        <th scope="col">예매</th>
+	    </tr>
+	    </thead>
+	    <tbody>
+	    <tr>
+	        <th scope="row" rowspan="1">10월6일</th>
+	        <td>15세 이상 관람가 오직 그대만</td>
+	        <td>20:00</td>
+	        <td>예매</td>
+	    </tr>
+	    </tbody>
+	</table>
+
+- table
+	특이한 경우가 아니라면 레이아웃을 표현하기 위해 사용하지 않는다.
+	cellspacing, cellpadding, summary 순서로 attribute를 선언한다.
+	summary는 표의 내용을 요약하여 표기하되, th에 들어가있는 내용들을 전부 포함하여야 한다.
+
+- caption
+	표의 제목을 표현한다.
+
+- colgroup
+	td엘리먼트들을 열로 묶어 제어할 때 선언한다.
+
+- col
+	테이블의 각 열의 너비 지정을 위해 선언한다.
+
+- thead
+	항목의 제목을 묶을때 사용한다.
+	thead 자식 element는 th만 와야하며, td가 포함이 되는 경우에는 thead로 묶지 않는다.
+
+- tfoot
+	테이블의 하단을 묶을때 사용한다.
+	thead와 tbody 사이에 위치하여야 하며, 필수항목은 아니다.
+	※ 테이블을 인쇄할때 테이블이 여러페이지에 걸친 경우, 모든 페이지에 thead와 tfoot이 반복해서 출력된다.
+
+- tbody
+	테이블의 본문을 묶을때 사용한다.
+
+- tr
+	각 테이블의 행을 표시한다. 자식 element로는 th 또는 td만이 위치할 수 있다.
+
+- td
+	각 테이블의 셀 하나하나를 표시한다.
+
+- th
+	테이블의 제목 셀을 표시한다 scope attribute로 현재의 셀이 어느 셀의 제목인지 범위를 명시해준다.
+
+- td, th 공통 attribute
+	rowspan : 수직 방향으로 셀을 결합한다
+	colspan : 수평방향으로 셀을 결합한다
+
+▶링크, 이미지, 이미지맵
+- a (Anchor)
+	의미
+	텍스트 및 이미지에 하이퍼텍스트를 설정한다.
+
+	사용
+	인라인 요소로, 인라인요소와 텍스트를 포함 할 수 있다.
+
+	속성
+	href : 하이퍼링크 주소 지정
+	id, name : 앵커 식별자 지정
+	title : 하이퍼링크의 보충 정보를 표시. 대다수의 브라우저에서 툴팁으로 표시된다
+	target : 하이퍼링크가 열릴 대상을 지정한다. _blank/_liarent/_self/_toli/각 프레임의 name.
+
+- img
+	의미
+	이미지를 삽입한다.
+
+	사용
+	인라인 요소이며, 빈 요소로 종료태그가 없는 요소이다.
+
+	속성
+	src : 삽입할 이미지의 파일명 혹은 url을 지정한다.
+	alt(Alternative Text) : 이미지의 대체텍스트를 지정한다. IE에서는 툴팁으로 표시가 된다.
+	width, height : 이미지의 가로/세로 크기를 지정한다.
+	페이지 렌더링시 width, height 속성의 값만큼 영역을 확보하고 그 이외의 부분에 다른 부분을 표시함으로
+	이미지가 없어서 발생할 수있는 레아아웃 상의 어긋남을 사전에 방지하는 효과를 줄 수 있다.
+	border : 이미지 테두리의 두께를 설정한다. 의미가 없는 표현만을 위한 속성이므로 CSS로 컨트롤 하는 것을 권장한다.
+	longdesc : 이미지에 대한 자세한 설명이 있는 페이지의 경로를 지정한다. alt 속성을 보완하는 용도로 사용한다.
+	align, hspace, vspace : 수평/수직 위치 및 상하/좌우 여백을 지정한다.
+	의미가 없는 표현만을 위한 속성이므로 CSS로 컨트롤 하는 것을 권장한다.
+	usemap : 이미지맵의 name속성과 매칭시켜 이미지맵을 사용하게한다.
+
+- map
+	의미
+	블록요소로 이미지맵을 정의한다.
+
+	주요속성
+	name, id속성. img요소의 usemap 속성값과 name속성의 값을 매칭시켜 연관시킴
+	
+	이미지 맵이란?
+	이미지의 일부 영역에 링크를 두어 사용자에게 해당 정보를 제공할 수 있는 페이지로 이동하도록 만드는 기법
+
+- area
+	의미
+	이미지맵의 영역을 지정한다.
+
+	사용
+	빈 요소로 종료태그가 없다.
+
+	속성
+	href : URL을 지정한다.
+	alt : 이미지의 alt속성처럼 해당 하이퍼텍스트에 대한 대체 텍스트를 지정한다.
+	shape : 영역의 형태를 지정 (default / rect / circle / poly)
+	coords : 영역의 좌표 (이미지의 좌측 상단을 원점 0,0 으로 기준)를 쉼표로 구분하여 지정한다.
+	shape속성값에 따라 지정방법이 조금씩 다르다.
+	- rect : 사각형의 완쪽 상단 점 x,y좌표, 오른쪽 하단 점 x,y좌표
+	- circle : 원 중심의 x,y좌표, 원의 반지름
+	- poly : 첫번째 각의 x,y좌표, 두번째각의 x,y좌표...
+
+▶텍스트
+- em
+	의미
+	일반적인 강조의 의미를 갖는다.
+
+	사용
+	특정 텍스트를 강조하는 인라인 요소이다. 보통 이탤릭 스타일을 기본 스타일로 갖는다.
+
+- strong
+	의미
+	강한 강조의 의미를 갖는다.
+
+	사용
+	특정 텍스트를 강조하는 인라인 요소이다. 보통 볼드체의 스타일을 기본 스타일로 갖는다.
+
+▶그룹
+	그룹화 (grouping element)요소이다.
+	주로 id, class속성으로 CSS를 적용하기 위해 사용한다.
+	무분별한 그룹화 사용은 지양해야한다.
+- div
+	의미
+	블록요소로, 요소들을 그룹화할때 사용한다.
+
+	사용
+	블록요소 및 인라인요소, 텍스트를 포함한다.
+
+- span
+	의미
+	인라인요소로, 인라인요소들을 그룹화할때 사용한다.
+
+	사용
+	인라인 요소와 텍스트를 포함한다.
+
+▶폼
+	일반적인 폼의 경우 아래와 같이 작성을 한다.
+	<form action="#">
+	    <fieldset>
+	        <legend>검색</legend>
+	        <label for="tfSearch">키워드 입력</label>
+	        <input type="text" id="tfSearch" name="tfSearch" alt="검색어 입력창">
+	        <input type="submit" value="검색">
+	    </fieldset>
+	</form>
+
+- form
+	의미
+	폼의 최상위 요소로 폼을 구성한다.
+	action : 폼을 전송할 URL 지정(입력 데이터의 전달 위치)
+	method : 폼의 데이터를 전송하는 방법
+	get : 간단한 데이터 전송시 사용하며, url에 파라미터 값을 붙여 전송한다. 데이터가 URL에 그대로 노출되어 보안유지가 안된다
+	post : http헤더에 포함되어 서버로 전송이 되며, 일정크기 이상의 데이터 전송시 사용한다.
+	데이터가 URL에 노출되는 get 방식에 비해서 보안유지에 그나마 유리하다
+
+- fieldset, legend
+	의미
+	여러 폼 컨트롤을 폼 안에서 그룹화 하는 요소.
+
+	주요속성
+	fieldset 요소로 그룹화 하는 범위를 정의한 후 legend 요소로 그룹화한 범위의 제목을 표시
+	legend요소는 fieldset 요소의 바로 뒤에 한번만 사용 가능하다
+
+- label
+	의미
+	폼 컨트롤에 레이블을 정의하는 요소.
+
+	사용
+	label요소에 특정 텍스트를 레이블로 정의 함으로써 컨트롤과 관련시킬 수 있으며 동기화가 가능하다.
+	(레이블과 체크박스 중 어느쪽을 선택해도 체크박스가 선택됨)
+
+	명시적 레이블 부여
+	- label 요소의 for 속성에 해당 컨트롤의 id속성과 같은 값을 지정
+	- 하나의 컨트롤에 복수의 레이블을 지정 가능하다
+	- label 요소와 컨트롤은 인접 할 필요가 없다
+	<label for="male">남자</label> <input type="radio" name="sex" id="male" value="m">
+	<label for="female">여자</label> <input type="radio" name="sex" id="female" value="f">
+
+	암묵적 레이블 부여
+	- label 요소의 범위에 텍스트와 컨트롤을 포함하는 방법
+	- 하나의 컨트롤에 복수의 레이블 지정이 불가능하다
+	- 텍스트와 컨트롤은 반트시 label요소에 포함되어야 한다
+	<label>남자 <input type="radio" name="sex" id="male" value="m"></label>
+	<label>여자 <input type="radio" name="sex" id="female" value="f"></label>
+
+- input
+	의미
+	인라인 요소이며 빈요소로, 폼 안에 기본적인 컨트롤을 생성한다.
+
+	type 속성
+	text : 일반 텍스트 입력필드
+	password
+	- 비밀번호 입력필드
+	- 대부분의 브라우저에서 입력한 텍스트를 "*" 등으로 감추어(masking) 표시한다
+	- 일반 텍스트로 전송되기 ??문에 실제 데이터 전송시에는 해당 부분에 대한 암호화가 필요하다
+	checkbox : 복수 선택 가능한 체크박스
+	radio : 한개만 선택 가능한 라디오버튼
+	submit : 폼 송신 버튼
+	reset : 폼 리셋 버튼 (입력 내용 전부를 초기화함)
+	button : 범용 버튼
+	image : 송신 이미지버튼 (src 속성과 alt 속성을 지정해야함)
+	file : 송신파일 선택 필드
+	hidden : 숨겨진 필드 (화면에는 표시되지 않으나, 서버로 전송할 데이터를 지정)
+
+	속성
+	name : 해당 컨트롤의 이름 (서버에서 처리할 데이터의 컨트롤에는 name 속성이 반드시 필요)
+	value : 해당 컨트롤의 값
+	size : text, password 컨트롤의 가로크기
+	- 미 지정시 컨트롤의 폭은 브라우저에 따라 달라짐
+	- 지정을 하여도 브라우저의 설정 혹은 글꼴 크기에 따라 달라질 수 있다
+	maxlength : text, password 컨트롤의 최대 입력 문자수를 지정
+	checked : 체크박스, 라디오버튼의 초기 선택 상태를 지정
+	disabled : 해당 컨트롤을 포커스, 선택, 변경 등의 조작이 불가능하게 하고 데이터를 서버로 전송하지 않게함
+	readonly : 컨트롤의 내용을 변경되지 않게 하지만 데이터는 전송한다.
+
+	예시
+	<input type="submit" name="submit1" value="전송하기">
+	<input type="password" name="password1" size="10" maxlength="10">
+	<input type="radio" name="radio1" value="radio_value1" checked="checked">
+
+- select
+	의미
+	셀렉트 메뉴 전체를 정의하는 요소
+
+	주요 속성
+	name : 셀렉트메뉴의 이름 지정
+	size : 표시 줄 수 지정을 하고 목록을 박스로 표시. 지정된 size를 넘는 항목의 선택을 위해 스크롤바가 자동으로 표시됨.
+
+- option
+	의미
+	셀렉트메뉴의 항목을 정의하는 요소. select요소에는 한 개 이상의 option요소가 포함되어야한다
+	
+	주요속성
+	selected : 해당 항목이 선택된 상태 (선택된 option요소가 없을 경우 첫번째 option요소가 기본으로 선택)
+	value : 선택된 항목의 값
+
+- textarea
+	의미
+	여러 줄로 된 텍스트 필드를 생성하는 인라인 요소.
+
+	속성
+	name, disabled, readonly : input 요소의 속성 설명과 동일
+	rows : 표시 줄수를 지정 (입력 가능한 줄이 아닌, 브라우저에서 보여지는 줄의 수)
+	cols : 표시 폭을 문자수로 지정
+
+- button
+	의미
+	버튼을 생성하는 인라인요소. 
+	기능적으로는 input요소로 생성하는 버튼과 같지만, 이미지나 텍스트 등을 포함 할 수 있어 유연한 디자인이 가능함.
+
+	속성
+	type (기본값이 브라우저에 따라 다를 수 있어, type을 기입해준다)
+	submit : 송신버튼
+	reset : 리셋버튼
+	button : 범용버튼
+
+	예시
+	<button type="button">이미지 혹은 텍스트</button>
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  HTML5 Elements
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶메타데이터 콘텐츠 (Metadata Content)
+	메타데이터는 나머지 내용의 표현 및 행동을 설정함
+	다른 문서와의 관계를 설정하거나, 미분류 정보들을 포함한다.
+	base, command, link, meta, noscript, script, style, title
+
+▶플로우 콘텐츠 (Flow Content)
+	문서및 어플리케이션의 Body에서 사용되는 대부분의 요소는 플로우 콘텐츠로 분류 된다.
+	a, abbr, address, area (map 요소의 자식 요소인 경우), article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, 
+	cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5,
+	h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript,
+	object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong,
+	style (scoped 속성이 있으면), sub, sup, svg, table, textarea, time, ul, var, video, wbr, text
+
+	일반적으로 아무 플로우 콘텐츠 모델을 포함할 수 있는 콘텐츠 모델은 최소한 하나의 공백이 아닌 텍스트 노드를 포함하거나,
+	또는 최소한 하나의 임베디드 콘텐츠(아래 다시 설명)를 포함하여야 한다. 이러한 결과로 del요소 및 그 자식 요소들은
+	del요소의 부모 	엘리먼트가 될 수 없다.
+
+	위의 요구사항은 강력하게 지켜야 할 내용은 아니며, 스크립트로 데이터를 채우기 위해 자리를 잡아 두는 목적 등의
+	정당한 이유로 요소가 비어 있을 수 있다.
+
+▶섹션 콘텐츠 (Section Conetnt)
+	섹션 콘텐츠는 헤딩과 푸터의 유효범위를 지정함
+	제목과 그 내용을 포함하는 범위를 지정함
+	article, aside, nav, section
+	섹션 콘텐츠 요소는 헤딩과 아웃라인을 포함할 수 있다.
+
+▶헤딩 콘텐츠 (Heading Content)
+	헤딩 콘텐츠는 섹션(섹션 콘텐츠나 또는 헤딩 콘텐츠에 의해 암시적으로 마크업 된 영역)의 헤더를 정의한다.
+	h1, h2, h3, h4, h5, h6, hgroup
+
+▶프레이징 콘텐츠 (Phrasing Content)
+	프레이징 콘텐츠는 문서의 텍스트이며, 그 텍스트를 단락 내부레벨에서 마크업을 하는 요소임
+	프레이징 콘텐츠가 모여 문단을 구성한다
+	a (프레이징 콘텐츠만을 포함하는 경우), abbr, area (map 요소의 자식요소인 경우), audio, b, bdi, bdo, br, button, canvas,
+	cite, code, command, datalist, del (프레이징 콘텐츠을 포함하는 경우), dfn, em, embed, i, iframe, img, input,
+	ins (프레이징 콘텐츠만을 포함하는 경우), kbd, keygen, label, map (프레이징 콘텐츠만을 포함하는 경우), mark, math, meter,
+	noscript, object, output, progress, q, ruby, s, samp, script, select, small, span, strong, sub, sup, svg, textarea, time,
+	var, video, wbr, text
+
+	일반적으로 프레이징 콘텐츠 모델 요소를 포함할 수 있는 요소들은 최소 하나의 공백이 아닌
+	텍스트를 포함하거나 또는 최소 하나의 임베디드 콘텐츠를 포함하여야 한다.
+
+▶임베디드 콘텐츠 (Embedded Content)
+	임베디드 콘텐츠는 다른 리소스(음악, 영상 등)를 문서에 삽입하는 콘텐츠나,
+	문서에 삽입된 다른 형태에서 유래한 콘텐츠를 말한다.
+	audio, canvas, embed, iframe, img, math, object, svg, video
+	HTML의 네임스페이스에 속하지 않으면서, 콘텐츠를 포함하고 있지만 메타데이터가 아닌 것들을 임베디드 콘텐츠라 한다. (SVG등)
+	임베디드 콘텐츠 요소 중 일부는 외부 리소스가 사용이 불가능 할때 사용할 대체 콘텐츠를 갖는다.
+
+▶인터랙티브 콘텐츠 (Interactive Content)
+	인터랙티브 콘텐츠는 사용자와의 상호작용을 위해 사용되는 콘텐츠이다
+
+	a, audio (controls 속성이 있으면), button, details, embed, iframe, img (usemap 속성이 있으면),
+	input (type 속성이 hidden 상태가 아니면), keygen, label, menu (type 속성이 toolbar 상태면),
+	object (usemap 속성이 있으면), select, textarea, video (controls 속성이 있으면)
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  HTML5 New Element
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶섹션, 헤딩 관련요소
+- section
+	Category
+	Flow Content, Section Content
+
+	의미
+	일반적인 문서의 섹션을 의미함
+
+	사용
+	내용이 문서의 개요에 명시적으로 나타날때 사용하는것이 적합하며, 의미 부여 없이 스타일 적용만을 위한 범용 컨테이너가 아님
+	장이나 절 단위로 사용하며 Heading 요소를 사용하여 제목을 넣어 사용
+
+- article
+	Category
+	Flow Content, Section Content
+
+	의미
+	HTML5의 명세에 의하면 article은 독립적으로 구성 할 수 있는 콘텐츠로 별도로 배포하거나 재사용하기 위한 구조임.
+
+	사용
+	article 요소끼리 중첩이 가능하나 원칙적으로 외부 article 요소의 내용과 관련이 있어야 함.
+	웹표준개발팀 내부 가이드로는 article은 자체로 완전한 하나의 개별 콘텐츠로 그 내부에 Section을 포함할 수 있다.
+
+	예시 코드
+	<article id="mArticle">
+	    <h2>미디어다음 정치뉴스 목록</h2>
+	    <section>
+	        <h3>복지시장 '박원순호' 본격적인 닻 올랐다</h3>
+	        <p>16일 16일 35대 서울특별시장의 공식 취임식을 계기로 '복지시장'을 표방하는 박원순호의 닻이 본격적으로 올랐다</p>
+	        <ul>
+	            <li>박원순 파격 행보의 절정 '온라인 취임식'</li>
+	            <li>박원순 서울시장 취임식 어떻게 진행됐나</li>
+	            <li>검은머리 대머리 될 때까지 충성</li>
+	        </ul>
+	    </section>
+	</article>
+
+- nav
+	Category
+	Flow Content, Section Content
+
+	의미
+	네비게이션 사이트 내에 다른 페이지로 링크되거나, 한 페이지 내부에서 이동하는 링크에 사용
+
+	사용
+	링크 모두를 nav에 둘 필요는 없으며, 의미상 네비게이션에 해당할때 사용
+	footer나 그 외의 section등에서 사용되는 링크는 그 자체의 요소를 사용
+
+	예시 코드
+	<nav>
+	    <menu>
+	        <li><a href="#">홈</a></li>
+	        <li><a href="#">뉴스</a></li>
+	        <li><a href="#">블로그</a></li>
+	        <li><a href="#">카페</a></li>
+	    <menu>
+	</nav>
+	<article id="mArticle">
+	    <h2>'미디어다음 정치뉴스 목록</h2>
+	    <section>
+	        <h3>복지시장 '박원순호' 본격적인 닻 올랐다</h3>
+	        <p>16일 16일 35대 서울특별시장의 공식 취임식을 계기로 '복지시장'을 표방하는 박원순호의 닻이 본격적으로 올랐다</p>
+	        <ul>
+	            <li><a href="#">박원순 파격 행보의 절정 '온라인 취임식'</a></li>
+	            <li>박원순 서울시장 취임식 어떻게 진행됐나</li>
+	        </ul>
+	    </section>
+	    <footer>
+	        <a href="#">회사소개</a>
+	    </footer>
+	</article>
+
+- main
+	Category
+	Flow Content
+
+	의미
+	문서나 애플리케이션의 body 영역의 주요 콘텐츠 영역
+	접근성을 향상시키며, 검색엔진에서의 콘텐츠 가중치를 향상시킨다.
+
+	사용
+	문서의 고유한 내용으로 페이지 내에서 단일 적용한다. (사이트 네비게이션 링크, 저작권 정보, 사이트의 로고 및 배너 등은 제외)
+	article, aside, footer, header, nav 의 하위 요소로 사용할 수 없다.
+
+- aside
+	Category
+	Flow Content, Section Content
+
+	의미
+	주 콘텐츠와 간접적인 관계인 콘텐츠를 표현
+
+	사용
+	블로그의 사이드바 형태로 표현되는것이 일반적임
+
+- header
+	Category
+	Flow Content
+
+	의미
+	페이지의 헤더를 나타냄
+
+	사용
+	콘텐츠 목차, 검색 폼, 관련 로고 등을 포함하는 래퍼 요소로 사용 가능
+	섹션 콘텐츠가 아니므로 섹션을 설정하진 않음. 그룹화를 위한 요소임
+
+- footer
+	Category
+	Flow Content
+
+	의미
+	페이지의 풋터를 나타냄
+
+	사용
+	문서 작성자, 관련 문서의 링크, 저작권자 등과 같은 콘텐츠를 작성
+	header와 마찬가지로 섹션 콘텐츠가 아니므로, 섹션을 설정하지 않음. 그룹화를 위한 요소이다.
+
+▶콘텐츠 그룹화요소
+- figure
+	Category
+	Flow Content, Sectioning Root
+	
+	의미
+	사진이나 코드 등의 콘텐츠와 캡션을 의미상으로 연결하고 싶을때 사용
+
+	사용
+	figcaption 요소(캡션)는 필수는 아니지만 사용한다면 요소 처음이나 끝에 와야 함
+
+- figcaption
+	Category
+	None
+
+	의미
+	figrue 요소에 작성된 콘텐츠의 캡션을 표현한다.
+
+▶텍스트레벨 시맨틱 요소
+- time
+	Category
+	Flow Content
+
+	의미
+	24시간 형태에서 시각 또는 그레고리력에 의한 일자를 표현함. 시간대를 선택할 수 있다.
+
+	사용
+	일자는 연월일 형태의 문자열로 작성하며 연도는 네자리로 값이 0보다 커야한다. 연월일 사이 구분은 하이픈으로 한다
+	시간은 시분초 형태의 문자열로 작성하며, 24시간 표기를 따른다. 시분초 사이 구분은 콜론으로 한다
+	일자와 시간을 연속에서 작성하려면 일자 작성 후 T를 붙이고 시간을 작성한다
+	시간대는 시간표기 뒤에 +나 -를 표기하고 그리니치 표준시로부터의 시차를 표기하면 된다
+
+	속성
+	pubdate
+	불린 타입으로, 작성을 하면 값을 지정한 것으로 인식한다.
+	작성된 시각은 엘리먼트에서 가장 가까운 부모 article 요소를 작성한 시간을 나타나게 되며,
+	부모 article요소가 없을 시에는 문서를 작성한 시간이 된다.
+	브라우저를 위한 속성으로, 페이지에 표시는 되지 않는다
+	datetime
+	실질적인 시간을 정의하는 값으로, 이 속성이 없다면 time요소의 내용이 명시하는 시간이 된다.
+
+- mark
+	Category
+	Flow Content, Phrasing Content
+
+	의미
+	문서에서 다른 콘텐츠와의 관련성을 표시 하기 위해 참조 목적으로 하이라이팅한 텍스트 집합을 나타냄
+
+- ruby
+	Category
+	Flow Content, Phrasing Content
+
+	의미
+	하나 이상의 구문 일부분에 루비 주석을 달기 위해 사용
+	루비주석은 텍스트 주변에 나타나는 짧은 텍스트로, 기준이 되는 텍스트 위에 주석을 다는 형태를 의미함
+
+	사용
+	ruby요소 내에 기준 텍스트를 작성하고 rt나 rp요소로 해당 주석을 표현함
+
+- rt
+	Category
+	None
+
+	의미
+	ruby요소 내에 루비 주석을 표현함
+
+- rp
+	Category
+	None
+
+	의미
+	ruby요소 내에 루비 주석을 지원하지 않는 UA에서 루비 텍스트를 괄호로 둘러싸 표현하기 위하여 사용
+
+▶멀티미디어 요소
+- video
+	Category
+	Flow Content, Phrasing Content, Embedded Content, Interactive Content (control속성이 있으면)
+
+	의미
+	동영상을 재생하기 위하여 사용
+
+	속성
+	src : 비디오 파일의 URL을 지정함
+	autoplay : 불린 속성으로, 자동으로 재생됨
+	controls : 불린 속성으로, 비디오를 제어할 수 있는 UI를 제공함
+	loop : 불린속성으로, 반복 재생을 함
+	preload : 재생 전 모두 불러올지 지정
+	height, width : 비디오 재생시 크기를 지정
+	poster : 이미지파일의 URL을 지정하며, 재생이 되기 전까지 표시될 이미지를 지정한다.
+
+	예시 코드
+	<video src="movie.ogv" controls poster="stop.gif" width="400" height="300">
+	    <p>본 동영상은 html5 video태그를 사용하는 방법을 알려주는 동영상으로, 
+	    <a href="http://movie.daum.net/movie.ogv">여기에서 다운로드 받을 수 있습니다</a></p>
+	</video>
+
+	video 요소 내부의 콘텐츠
+	<video> </video> 사이에 텍스트를 지정하면 해당 요소를 지원하지 않는경우
+	사용자가 콘텐츠에 접근할 수 있는 방법을 제시하는 대체 텍스트를 보여줄 수 있다. 
+	하지만 이것이 접근성을 고려한 것은 아니며, 시청각 혹은 기타 장애를 가진 사람이 콘텐츠를 이용할 수 있도록
+	대체 수단이 될 수 있는 다른 미디어 혹은 접근성 도구(자막 제공 등)를 함께 제공하는 방법을 고려 해야 한다.
+- track
+	의미
+	video 태그에 자막을 표시할 때 사용하는 태그
+
+	폴더 구성 : html.html / track.srt / mp4.mp4 / webm.webm
+
+	srt 파일은 대부분 템플릿 제공을 하지 않기 때문에 텍스트 파일을 만들고
+	저장시 강제로 지정해야 한다.(저장 형식은 '모든 파일'로 선택해야 함)
+
+- audio
+	속성
+	preload : 음악파일 재생 전 모두 불러올지 설정
+	autoplay : 자동 재생할지 지정. autoplay="autoplay"
+	loop : 반복할지 지정
+	controls : 재생도구를 출력할지 지정. controls="controls"
+
+- Category
+	Flow Content, Phrasing Content, Embedded Content, Interactive Content (control속성이 있으면)
+
+	의미
+	음성을 재생 하기 위하여 사용
+	video요소와 마찬가지로 내부에 콘텐츠를 제공 할 수 있다.
+
+	속성
+	src : 비디오 파일의 URL을 지정함
+	autoplay : 불린 속성으로, 자동으로 재생됨
+	controls : 불린 속성으로, 비디오를 제어할 수 있는 UI를 제공함
+	loop : 불린 속성으로, 반복 재생을 함
+
+- source
+	Category
+	None
+
+	의미
+	미디어 소스를 지정함
+
+	사용
+	단독으로 사용 불가능 하며, video나 audio 요소의 자식 요소로 사용된다.
+	video나audio의 src속성에 미디어 소스를 지정하는 대신 source로 미디어 소스를 지정하며, 다수의 미디어 소스지정이 가능하다.
+	mp3, ogg파일을 함께 제공하면 모든 브라우저에서 음악 재생 가능.
+
+	속성
+	src : 미디어의 URL을 지정한다
+	media : 미디어 타입을 지정한다.
+	type : 미디어의 MIME타입을 지정한다. (type="audio/mp3", type="audio/ogg”)
+
+- canvas
+	Category
+	Flow Content, Phrasing Content, Embedded Content
+
+	의미
+	동적 그래픽을 표현한다.
+
+	사용
+	JavaScript로 HTML Canvas 2D Context API 에서 제공하는 메서드와 속성을 사용하여
+	2차원적 그래픽을 bitmap 캔버스 형태로 표현한다.
+
+▶폼 요소
+- datalist
+	Category
+	Flow Content, Phrasing Content
+	
+	의미
+	다른 컨트롤에서 사용할 수 있도록 미리 정의된 옵션 목록을 그룹화한다.
+
+	사용
+	option 요소의 세트를 표현하며, option요소를 자식 요소로 작성하게 된다.
+	텍스트필드에서 서제스트 와 같은 내용을 표시할 수 있다.
+
+- keygen
+	Category
+	Flow Content, Phrasing Content, Interactive Content
+
+	의미
+	비밀키와 공개키 쌍을 만들어 내는 컨트롤을 나타냄
+
+	속성
+	challenge : 속성을 사용하면 제출되는 키와 함께 서버로 전송된다.
+	keytype : 키 타입을 지정한다. 기본값은 rsa이며, HTML5 스펙에서는 rsa이외의 값을 지정해도 RSA를 지원하도록 되어있다.
+
+- output
+	Category
+	Flow Content, Phrasing Content
+
+	의미
+	계산 결과를 표현하는 요소
+
+	사용
+	자체 요소에서 계산을 위한 값을 갖는게 아닌 다른 요소에서 발생한 값을 계산하게 되므로 다른 요소와 관련을 맺게 된다
+
+	속성
+	for : 계산에 영향을 미치는 요소와 output요소를 명확하게 관련을 맺게 한다.
+
+	예시 코드
+	<form onsubmit="return false">
+	    <input name=a type=number step=any>+
+	    <input name=b type=number step=any> =
+	    <output onforminput="value = a.valueAsNumber + b.valueAsNumber"></output>
+	</form>
+
+- meter
+	Category
+	Flow Content, Phrasing Content
+
+	의미
+	특정 범위 내에서의 스칼라 측정 또는 분포 비율 등을 나타냄
+	ex) 특정 투표율, 디스크 사용현황 등
+
+	속성
+	min : 최소값을 지정하며 기본값은 0이다
+	max : 최대값을 지정, 기본값은 1.0
+	value : 게이지에 표시할 값을 유동 소숫점의 숫자로 지정함
+	low : 낮은 영역의 기준값을 지정
+	high : 높은 영역의 기준값을 지정
+	optimum : 최적 점을 지정함
+
+- 폼 요소 추가 속성
+	공통속성
+	autofocus : 페이지 로딩 완료시 자동으로 해당 컨트롤에 포커싱이 됨
+
+input 요소
+	type 속성
+	- search : 검색 필드 기능을 함
+	- tel : 전화번호 입력을 위한 타입
+	- url : 절대경로 URL 입력을 위한 타입
+	- email : E-Mail 주소를 입력 하기 위한 타입
+	- date : 년/월/일 입력을 위한 타입으로, 캘린더가 제공됨
+	- month : 년/월 입력을 위한 타입으로, 캘린더가 제공됨
+	- time : 시간 입력을 위한 타입으로 1/1000초 단위까지 입력이 가능하다.
+	- datetime : UTC 일자, 시간 입력을 위한 타입이다.
+	- datetime-local : 지역화된 일자/시간입력을 위한 타입이다.
+	- week : 년도와 주차를 입력하기 위한 타입이다.
+	- number : 한 줄의 숫자 데이터를 입력 하기 위한 타입이다.
+	- range : 슬라이더 형태로 숫자 범위 데이터를 입력할 수 있다.
+	- color : 컬러피커에서 컬러를 선택하여 데이터를 입력할 수 있다.
+	autocomplete : 입력 필드 값의 자동 완성 여부를 지정. boolean 타입이다
+	list : 서제스트를 제공할 요소의 id를 지정
+	required : boolean 속성으로, 필수 입력 여부를 지정
+	multiple : 다수 값 입력 여부를 지정 콤마(,)로 구분한다
+	pattern : 컨트롤 값을 체크하는 정규 표현식 패턴을 지정한다
+	min : 컨트롤의 최소값을 지정한다 (숫자만 가능)
+	max : 컨트롤의 최대값을 지정한다 (숫자만 가능)
+	step : 컨트롤의 증가 단위 값을 지정한다
+	placeholder : 입력값에 대한 힌트를 지정한다.
+
+▶HTML5 Changed Elements
+- address
+	Category
+	Flow Content
+
+	변경사항
+	HTML 4 에서는 연락처 정보가 어떤 컨텐츠와 관련 되어 있는 지에 관해서는 규정이 없었으나,
+	HTML 5 에서는 어떤 요소 안에 address 요소가 들어 있는 가에 따라 해당 address 요소가 어떤 콘텐츠 부분과
+	관련된 연락처 정보인가를 구별한다.
+
+- b
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	단순한 굵은 글꼴이 아닌 키워드, 제품명 처럼 다른 문장과 구별 하고 싶은 텍스트 범위에 사용한다.
+	(단, 중요성이나 강조의 의미는 없음)
+
+- cite
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	HTML 4에서는 인용구를 정의하는데 사용되었으나, HTML 5에서는 인용되는 작품(책, 노래, 영화, TV 쇼, 그림, 조각품 등)의
+	제목을 정의하는 곳에 사용한다.
+
+- dl
+	Category
+	Flow Content
+
+	변경사항
+	이전에는 정의 리스트(Definition List)이었지만, HTML 5 에서는 설명 리스트 (Description List)로 변경한다.
+
+- hr
+	Category
+	Flow Content
+
+	변경사항
+	시각적인 표현을 위한 구분선이 아닌, 단락단위에서 의미가 바뀌는 구분선을 적용한다.
+
+- i
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	단순한 기울임 글꼴이라는 시각적인 표현이 아닌 목소리나 감정 등을 나타내는 텍스트의 범위에 사용함.
+	또는 특정 전문 용어, 본문과 다르 언어로 표기되어 있는 부분 등을 나타내기 위해 사용한다.
+	(다른 언어 부분을 나타낼 때에는 lang 속성을 함께 기입)
+
+- label
+	Category
+	Flow Content, Phrasing Content, Interactive content
+	
+	변경사항
+	HTML 5에서 "form" 속성이 새롭게 추가되었으며, form 요소와 컨트롤을 연결한다.
+
+- noscript
+	Category
+	Metadata Content, Flow Content, Phrasing Content
+
+	변경사항
+	스크립트가 무효한 브라우저 등에서 대신 표실 내용을 기입, xml 구문에서는 사용하지 못한다.
+
+- s
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	더 이상 정확하지 않게 되었거나 관련이 없어졌음을 표시하는데에 사용하며 취소선으로 브라우저에서 표시된다.
+	(내용을 정정하여 삭제되었음을 나타내고 싶은 경우에는 del 요소를 사용)
+
+- small
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	상세항목 등과 같은 주석을 나타낸다. (경고, 법적 제약, 저작권 표시, 라이선스 요건 등)
+
+- strong
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	강한 강조가 아닌 중요함을 나타낸다.
+
+- u
+	Category
+	Flow Content, Phrasing Content
+
+	변경사항
+	이전에는 단순 밑줄을 긋기 위하여 사용되었으나, HTML 5에서는 명시적으로 표현되어 있으나
+	이해하기 힘든 경우 혹은 철자가 잘못 기입된 경우에 적용한다.
+
+- a
+	Category
+	Flow Content, Phrasing Content, Interactive Content
+
+	변경사항
+	블록 레벨 요소를 포함할 수 있다.
+	- 이전 HTML에서는 a 요소는 인라인 레벨 요소로서 블록 레벨 요소를 포함할 수 없었지만, HTML 5에서는
+	블록 레벨 요소를 포함할 수 있다. 단, a, button, embed, iframe, textarea와 같이
+	Interactive 요소는 포함할 수 없다.
+	href 속성은 필수 속성이 아니다.
+	- href 속성이 지정되지 않을 시에는 place holder를 나타낸다.
+
+- menu
+	Category
+	Flow Content
+
+	변경사항
+	툴바나 컨텍스트 메뉴에 사용
+	HTMl 4.01에서 사라졌다가 HTML 5 명세에서 다시 등장하였으나, 2013년 8월 갱신된 HTML5 CR 명세에서 다시 사라짐.
+	(HTML 5.1과 WHATWG HTML 명세에 포함되어 있음)
+
+▶HTML5 Obsolete Elements
+	시각적인 표현으로서 CSS로 처리할 수 있는 요소, 사용성과 접근성을 저해하는 요소,
+	지금까지 거의 사용되지 않았던 요소가 폐지되었다.
+
+- 시각적인 표현 요소 (CSS로 구현이 가능한 요소)
+	basefont
+	big
+	center
+	font
+	strike
+	strike
+
+- 사용성과 접근성을 저해하는 요소 (프레임 관련 요소)
+	frame
+	frameset
+	noframes
+
+- 거의 사용되지 않거나 대체 가능한 요소
+	acronym : abbr 요소로 대체 가능
+	applet : object 요소로 대체 가능
+	isindex : 폼 컨트롤 요소로 대체 가능
+	dir : ul 요소로 대체 가능
+	hgroup : header 혹은 div 요소로 대체 가능
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  배우고 싶은 기술이나 목표
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+	▶웹접근성 : 널리 공부하기, 접근성 사이트 만들기
+	▶자바스크립트/제이쿼리 : 이론, 실습
+	▶CSS 애니메이션 : 타이밍 다루기, 애니메이션 만들기
+	▶블로그 운영하기 : 공부한것 정리, 지식 정리
+	▶커뮤니티 : 알고있는 지식 나눔, 스터디 열심히
+	▶기타 : default 파일 정리
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+  ★과제2
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  블록, 인라인, 인라인블록
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶블록요소
+▶인라인요소
+▶인라인블록 요소
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  reset, common
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶네이버 - 모바일
+	@charset "utf-8";
+	/* NHN Web Standard 2Team MJA 111025 */
+	/* Common */
+	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textare
+	a,button,select{margin:0;padding:0}
+	body,input,textarea,select,button,table{font-size:14px;line-height:1.25em}
+	body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+	body{position:relative;-webkit-text-size-adjust:none}
+	img,fieldset{border:0}
+	ul,ol{list-style:none}
+	em,address{font-style:normal}
+	a{text-decoration:none}
+	table{border-collapse:collapse}
+	hr{display:none !important}
+	.blind,#u_skip{visibility:hidden;overflow:hidden;position:absolute;left:-
+	999em;width:0;height:0;font-size:0;line-height:0}
+	#content{clear:both;width:100%;}
+	#content::after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+
+▶다음 - 모바일
+	/* reset */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+	fieldset,img {border:0 none}
+	dl,ul,ol,menu,li {list-style:none}
+	blockquote, q {quotes:none}
+	blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+	input,select,textarea,button {font-size:100%;vertical-align:middle}
+	button {border:0 none;background-color:transparent;cursor:pointer}
+	table {border-collapse:collapse;border-spacing:0}
+	body {-webkit-text-size-adjust:none} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+	input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+	input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+	button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+	input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+	body {background:#fff}
+	body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+	a {color:#333;text-decoration:none}
+	a:active, a:hover {text-decoration:none}
+	address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+▶지영
+	@charset "utf-8";
+	@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+	@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic");
+	/* font-family: 'Nanum Gothic', sans-serif; */
+	/* font-family: 'Noto Sans', sans-serif; */
+
+	/* common */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+	body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333}
+	fieldset,img {border:0}
+	dl,ul,ol,menu,li {list-style:none}
+	input,select,textarea,button {vertical-align:middle}
+	button {cursor:pointer}
+	a {color:#333;text-decoration:none}
+	a:hover,a:active,a:focus{text-decoration:underline}
+	address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+	/* global */
+	.show {display:block}
+	.hide {display:none}
+	.f_l {float:left}
+	.f_r {float:right}
+	.tbl {border-collapse:collapse;border-spacing:0} /* 테이블 초기화 */
+	.blind{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+	.clearfix{*zoom:1}
+	.clearfix:after{display:block;clear:both;content:''}
+	.skip a{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+	.skip a:hover,.skip a:active,.skip a:focus{top:0}
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  css2 css3 브라우저 고려
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  CSS Properties
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶Display
+	1. Summary
+	엘리먼트의 박스타입을 지정할 수 있다.
+	타입은 대표적으로 none, inline, block, inline-block 이 있으며, 그 외 table, table-cell 등의 타입이 있다.
+	inline-block 속성은 해당 엘리먼트가 inline요소처럼 배치되면서 block요소의 기능(width, height, margin, padding)들을 사용 할 수 있는 속성
+
+	display:none;
+	display:block;
+	display:inline;
+	display:inline-block;
+
+▶Overflow
+	1. Summary
+	자식엘리먼트의 영역이 해당 엘리먼트의 영역보다 더 클 경우 자식엘리먼트를 보여주는 영역을 설정할 수 있다.
+	주로 스크롤바 표시여부를 지정할 때 많이 사용 된다.
+
+	overflow:visible; (기본)
+	overflow:hidden;
+	overflow:scroll;
+	overflow-x:scroll;
+	overflow-y:scroll;
+	overflow:auto;
+
+▶Float
+	1. Summary
+	엘리먼트를 block형태로 부유시킬때 사용 (display:block을 안해주어도 블럭화됨)
+	block형태로 특정방향(left, right)으로 정렬
+
+	float:inherit; (기본 : 밖의 float속성을 상속받음)
+	float:left;
+	float:right;
+	float:none;
+
+▶Position
+	1. Summary
+	엘리먼트의 위치를 조정하기 위한 방법을 설정한다.
+	position:relative 속성을 position:absolute 요소의 부모요소에 적용하면, 부모요소는 position:absolute 요소의 기준점이 된다.
+
+	position:static; (기본, offset을 가지지 않음)
+	position:relative; (상대적, 원래 위치를 기준)
+	position:absolute; (절대적, 부모위치를 기준)
+	position:fixed; (화면에서 고정, ie6 지원 불가)
+
+	top:10px;
+	left:20px;
+	bottom:10px;
+	right:20px;
+
+▶Z-index
+	1. Summary
+	엘리먼트의 입체적인 순서를 정의
+	수치가 작을수록 아래쪽에 있다는 것을 의미
+	z-index의 수치는 엘리먼트 동일한 위치선상에서 적용된다.
+	(두 요소중 한 요소의 z-index가 높아도 상위(부모) 엘리먼트끼리의 수치가 낮으면 아래쪽에 위치하게 된다.)
+
+	z-index:3;
+	z-index:10000;
+	z-index:400;
+
+▶Width & Height
+	1. Summary
+	엘리먼트의 가로, 세로 사이즈를 지정
+
+	width:150px;
+	width:50%;
+	height:300px;
+	height:100%;
+
+	※ 박스모델
+	브라우저의 렌더링모드에 따라 표준모드(standards) 와 호환모드(quirks) 로 렌더링되는데,
+	표준모드는 W3C에서 정의한 웹표준방식을 따르며 호환모드는 오래된 구브라우저를 위한 렌더링모드이다.
+	이러한 렌더링 모드에 따라 박스모델 계산방식이 다른데 표준모드는 width/height 값에 padding값과 border값이 포함이 안되어 있으나,
+	호환모드에서는 width/height 값 계산시 padding값과 border값을 포함 시킨다.
+
+	tip)
+	호환모드(quirks)를 고려한다면 width값에 좌우 padding값과 좌우 border값을 같이 선언하지 않고,
+	height값 역시 상하 padding값과 상하 border값을 같이 선언하지 않는 방식으로 구현한다면 표준모드와 동일한 레이아웃을 구현할 수 있다.
+
+▶Margin & Padding
+	1. Summary
+	엘리먼트(Content)의 바깥여백(margin)과 안쪽 여백(padding)을 지정
+	축약형의 순서는 위, 오른쪽, 아래, 왼쪽(시계방향) 순서로 인식
+	margin 병합 : 세로 방향으로 마진을 지정한 두개의 서로 다른 요소가 수직 방향으로 접해 있을 때 두 요소 사이의 마진 간격은 두 요소의 마진값 중 큰값으로 병합됨.
+
+	margin-top:10px;
+	margin-right:40px;
+	margin:10px 40px 20px 10px ;
+	padding:20px ;
+	margin:20px 10px;
+	margin:20px 10px 30px;
+
+▶Border
+	1. Summary
+	엘리먼트 바깥에 선을 그려줌(외곽선)
+	방향에 따라 스타일을 따로 지정가능
+	width, height 값과는 별개로 엘리먼트의 padding 바깥쪽에 영역을 차지
+
+	border-width:3px; (선 굵기)
+	border-style:solid; (선 모양, solid:실선, dashed:끊어진 실선, dotted:점선)
+	border-color:red; (선 색깔)
+	border:3px solid red; (축약형)
+
+	방향에 따라 선의 스타일을 각각 지정할 수 있다.
+	border-top-width:3px;
+	border-right-style:dotted;
+	border-left-color:blue;
+
+▶Font
+	1. Summary
+	글자와 관련된 스타일을 지정할 수 있는 속성
+
+	font-style:italic; (폰트 기울기, normal:일반, italic:이탤릭체, oblique:기울기)
+	font-variant:small-caps; (폰트 변형, normal:일반, small-caps:작은대문자)
+	font-weight:bold; (폰트 굵기, normal:일반, bold:굵게)
+	font-size:12px; (폰트 크기)
+	line-height:14px; (줄 간격)
+	font-family:gulim; (폰트 서체)
+	font:italic bold 12px/14px gulim; (축약형)
+
+	※ Font 축약형을 쓸때에 다음과 같은 이슈가 있어, 축약형 보다는 풀어서 쓰는 것을 권장한다.
+	폰트 축약형을 쓰면 기존 element 의 속성이 지워질수도 있다.
+	폰트 축약형이 모두 적용되어 기존 속성을 가지고 오지 못한다.
+	축약형을 안 썼을때 기존 속성을 가지고 온다.
+	모바일 웹 (Opera Mobile에서 공통으로 폰트 축약형을 적용하였을 경우 하위에서 상속받지 못하는 경우가 있다.)
+	폰트축약형을 쓸때에 font 속성중 지정안된 것들을 기본값으로 불러서 렌더링 하게 되어 불필요한 성능 낭비가 된다.
+	아래와 같은 순서로 풀어서 쓰는 것을 권장
+	font-style > font-variant > font-weight > font-size > line-height > font-family
+	
+▶Background
+	1. Summary
+	엘리먼트 영역에 색상, 이미지를 채우는 속성
+
+	background-color:#000; (배경색)
+	background-image:url(http://aaa.gif); (배경 이미지)
+	background-repeat:no-repeat; (배경 이미지 반복여부, no-repeat:반복안함, repeat-x:가로로 반복, repeat-y:세로로 반복)
+	background-position:0 25px; (배경 이미지 위치지정, left, top 기준)
+	background:#000 url(http://aaa.gif) no-repeat 0 25px; (축약형)
+	background:red url(daum.gif) repeat-y left top;
+	background:url(daum.gif) repeat-x 0px 0px;
+
+▶Color
+	1. Summary
+	글자의 색상을 변경하는 속성
+
+	color:red;
+	color:rgb(255,0,0);
+	color:#FF0000;
+	color:#F00;
+
+▶Text-indent
+	1. Summary
+	글자를 들여쓰거나 내어쓸때 사용
+
+	text-indent:10px;
+	text-indent:-10px;
+
+▶Text-decoration
+	1. Summary
+	글자의 윗줄, 중간줄, 밑줄 등을 적용시에 사용
+
+	text-decoration:none;
+	text-decoration:underline; (밑줄)
+	text-decoration:line-through; (글자중간줄)
+	text-decoration:overline; (윗줄)
+
+▶Text-align
+	1. Summary
+	글자의 정렬 기준을 지정
+
+	text-align:left;
+	text-align:right;
+	text-align:center;
+	text-align:justify; (양쪽 정렬)
+
+▶Clear
+	1. Summary
+	float 를 해제할 때 사용
+	이전 엘리먼트의 float값을 상속받아 같은 방향으로 정렬되는 현상을 막기 위해 사용
+
+	clear:inherit; (기본)
+	clear:left; (왼쪽으로 float된 엘리먼트의 하단에 위치)
+	clear:right; (오른쪽으로 float된 엘리먼트의 하단에 위치)
+	clear:both; (모든 float의 하단에 위치 ? 개념상 float상속을 받지 않음)
+
+▶border-radius
+	1. Summary
+	박스모델의 모서리를 부드럽게 처리할 수 있는 속성
+	둥근 정도는 border-radius 값을 조정하여 자유롭게 조절 가능하며, 각각의 모서리에 대한 radius 값도 변경이 가능하다.
+
+	2. Syntax
+	border-radius : length;
+	(length : 곡률의 크기)
+
+	3. Example
+	/* 모서리 방향에 따라 radius 다르게 적용 */
+	border-top-left-radius:10px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:5px;
+	/* 모든 방향 radius 동일하게 적용 */
+	border-radius:25px;
+
+▶box-shadow
+	1. Summary
+	박스모델의 그림자 효과를 주는 속성
+
+	2. Syntax
+	box-shadow: (가로 오프셋 거리) (세로 오프셋 거리) (blur radius) (그림자 색상);
+	가로 오프셋 거리 : 그림자가 가로로 얼마나 떨어져 있는지 지정. (양수:오른쪽, 음수:왼쪽)
+	세로 오프셋 거리 : 그림자가 세로로 얼마나 떨어져 있는지 지정.
+	blur radius : 그림자의 번지는 정도(0:그림자 효과 X)
+
+	3. Example
+	box-shadow:10px 10px 5px #888;
+	
+▶border-image
+	1. Summary
+	테두리에 이미지를 넣을 수 있는 속성
+
+	2. Syntax
+	border-image : (source) (slice) (width) (outset) (repeat);
+	source : 이미지 주소
+	slice : 모서리의 크기
+	repeat(반복) | round(이미지를 적절한 크기로 반복하여 표시함) | space(이미지들의 간격을 조절하여 딱 맞게 함) | stretch(이미지를 늘려서 표시함)
+
+	3. Example
+	border-image:url(border.png) 30 30 round;
+
+▶background-size
+	1. Summary
+	배경 이미지 크기를 지정한다.
+
+	2. Syntax
+	background-size : [x], [y];
+	[x]% [y]% : 적용되는 요소의 크기에 비례하여 배경 이미지 적용
+	[x]px [y]px : 절대 크기로 배경 이미지 적용
+	cover : 배경 이미지를 늘여 적용되는 요소 전체에 표시
+	contain : 배경 이미지의 가로 세로 비율을 맞춰 요소에 표시할수 있는 최대 크기로 표시
+	
+	3. Example
+	background-size:100% 100%;
+
+▶background-origin
+	1. Summary
+	배경 이미지의 원점을 지정하는 속성
+
+	2. Syntax
+	background-origin : padding-box | border-box | content-box;
+	padding-box : padding영역부터 이미지를 배치함 (기본값)
+	border-box : border영역부터 이미지를 배치함
+	content-box : content영역부터 이미지를 배치함
+
+	3. Example
+	background-origin:border-box;
+	background-origin:padding-box;
+	background-origin:content-box;
+
+▶Layering Multiple Background Images
+	1. Summary
+	하나의 요소에 여러 개의 배경 이미지를 지정하는 속성
+	각 배경 이미지는 콤마(comma)로 구분하여 정의하며, 각각의 배경 이미지는 레이어처럼 여러 층으로 겹쳐서 표시된다.
+	처음 지정된 이미지가 맨 상위, 마지막에 지정된 이미지가 맨 하위에 표시된다.
+
+	2. Syntax
+	background-image : url(이미지경로1), url(이미지경로2), ..., url(이미지경로n);
+
+	3. Example
+	background-image:url(logo_daum.jpg), url(main_daum.jpg); /* logo_daum.jpg가 위에, main_daum.jpg가 아래에 표시됨 */
+	background-repeat:no-repeat;
+
+▶background-clip
+	1. Summary
+	배경을 표시할 범위 지정하는 속성
+
+	2. Syntax
+	background-clip : border-box | padding-box | content-box;
+	border-box : 보더 박스의 배경 표시
+	padding-box : 패딩 박스의 배경 표시
+	content-box : 콘텐츠 박스의 배경 표시
+
+	3. Example
+	div {width:250px;height:20px;margin-bottom:20px;padding:20px;border:10px dotted #92b901;background-color:yellow}
+	.box1 {background-clip:border-box;}
+	.box2 {background-clip:padding-box;}
+	.box3 {background-clip:content-box;}
+
+▶Gradients
+	스타일에서 선언된 2개 혹은 그 이상의 색상에서 부드럽게 색상변화를 표현하는 것으로, 크게 2가지 타입으로 나뉜다.
+	Linear Gradients
+	Radial Gradients
+
+- Linear Gradients
+	1. Summary
+	최소 2개 이상의 색상을 지정하여 선형 그라데이션을 표현하는 속성
+
+	2. Syntax
+	background : linear-gradient(direction or angle, color-stop(시작점의 색상), color-stop, ..., color-stop(종료점의 색상));
+	direction or angle
+	direction (to + 'keyword') : keyword는 top, bottom, left, right를 조합하여 적용
+	to bottom : 위에서 아래쪽 방향 (기본값)
+	to top : 아래에서 위쪽 방향
+	to left : 오른쪽에서 왼쪽 방향
+	to bottom right : 왼쪽 위에서 아래 오른쪽 방향
+	to bottom right : 왼쪽 위에서 아래 오른쪽 방향
+	angle (단위는 'deg')
+	0 deg : 위쪽 방향
+	90 deg : 오른쪽 방향
+	180 deg : 아래 방향
+	color-stop
+	색의 값과 위치를 공백(스페이스)로 구분
+	시작점 색상과 종료점 색상 사이에 color-stop을 추가하면 더욱 세밀하게 변화를 표현할 수 있다.
+
+	3. Example
+	background-image:linear-gradient(to bottom, blue, yellow);
+	background-image:linear-gradient(75deg, blue, yellow);
+
+	Linear Gradients Cross-browsing
+	브라우저 종류 및 버전에 따라 Linear Gradients 사용시, 문법에 차이가 있으므로 주의가 필요하다.
+	text
+	background-image:-webkit-linear-gradient(top, blue, yellow);
+	background-image:-moz-linear-gradient(top, blue, yellow);
+	background-image:-o-linear-gradient(top, blue, yellow);
+	background-image:linear-gradient(to bottom, blue, yellow);
+	background-image:-webkit-linear-gradient(60deg, blue, yellow);
+	background-image:-moz-linear-gradient(60deg, blue, yellow);
+	background-image:-o-linear-gradient(60deg, blue, yellow);
+	background-image:linear-gradient(30deg, blue, yellow);
+
+- Radial Gradients
+	1. Summary
+	최소 2개 이상의 색상을 지정하여 선형 그라데이션을 표현하는 속성
+
+	2. Syntax
+	background : radial-gradient(shape, size, position, color-stop(시작점의 색상), color-stop, ..., color-stop(종료점의 색상));
+	shape
+	circle : 원형
+	ellipse : 타원형
+	size
+	closest-side : (타)원의 중심에서 박스의 가장 가까운 라인에 내접하도록 지정
+	farthest-side : (타)원의 중심에서 박스의 가장 멀리 있는 라인에 내접하도록 지정
+	closest-corner : (타)원의 중심에서 박스의 가장 가까운 모서리에 내접하도록 지정
+	farthest-corner : (타)원의 중심에서 박스의 가장 멀리 있는 모서리에 내접하도록 지정
+	position (at + 'keyword') : 원형 그라데이션의 중심점을 지정
+	수치 (단위는 %, px)
+	방향 (left, right, top, bottom)
+	farthest-corner : (타)원의 중심에서 박스의 가장 멀리 있는 모서리에 내접하도록 지정
+	color-stop (Linear Gradients와 동일)
+
+	3. Example
+	background:radial-gradient(circle closest-corner at 60% bottom,red 10%,yellow 30%,green 60%);
+	Radial Gradients Cross-browsing
+	브라우저 종류 및 버전에 따라 Radial Gradients 사용시, 문법에 차이가 있으므로 주의가 필요하다.
+	text
+	background:-webkit-radial-gradient(60% bottom,circle closest-corner,red 10%,yellow 30%,green 60%);
+	background:-o-radial-gradient(60% bottom,circle closest-corner,red 10%,yellow 30%,green 60%);
+	background:-moz-radial-gradient(60% bottom,circle closest-corner,red 10%,yellow 30%,green 60%);
+	background:radial-gradient(circle closest-corner at 60% bottom,red 10%,yellow 30%,green 60%);
+
+▶text-shadow
+	1. Summary
+	텍스트에 그림자 효과를 지정할 수 있는 속성
+
+	2. Syntax
+	text-shadow : dx dy blur color;
+	dx : 본체와 그림자의 가로방향 거리
+	dy : 본체와 그림자의 세로방향 거리
+	blur : 흐려진 정도
+	color :색상
+
+	3. Example
+	text-shadow:5px 5px 5px #FF0000;
+
+▶word-wrap
+	1. Summary
+	단어 중간에서 줄 바꿈 속성을 지정
+
+	2. Syntax
+	word-wrap : nomal | break-wrod;
+	nomal : 공란이 없을경우 줄바꿈을 하지 않음 (기본값)
+	break-wrod : 공란이 없어도 요소의 폭보다 문장의 길이가 길어질 경우 줄바꿈을 함
+
+	3. Example
+	word-wrap:break-word;
+
+▶@font-face
+	1. Summary
+	웹에서 사용하는 Open Type font를 지정하는 규칙
+
+	2. Syntax
+	@font-face {
+	font-family: name;
+	src: url(글꼴 파일 경로)
+	}
+	name : 글꼴 이름 지정함.
+	url : 글꼴 파일의 경로 지정함. 브라우저마다 지원되는 글꼴 포맷이 다르기 때문에, 여러 개의 글꼴을 콤마(comma)로 구분하여 기입함
+	브라우저별 지원가능한 폰트 포맷
+	FF, Chrome, Safari, Opera : TTF(True Type Fonts) & OTF(Open Type Fonts) 지원
+	IE 9 이상 버전 : EOT (Embedded Open Type) 폰트 지원
+	IE 8 이하 버전 : 지원하지 않음
+
+	3. Example
+	@font-face {
+	  font-family:myFirstFont;
+	  src:url('Sansation_Light.ttf'),
+	  url('Sansation_Light.eot'); /* IE9+ */
+	 }
+
+▶Transitions
+	1. Summary
+	어떤 스타일을 다른 스타일로 부드럽게 변화할 수 있도록 지정하는 속성
+
+	2. Syntax
+	transition-property : 색상, 위치 등 변화의 대상이 되는 CSS 속성을 지정함.
+	transition-duration : 속성의 변화에 걸리는 시간 지정하는 속성
+	transition-timing-function : 속성 변화의 속도를 지정하는 속성(linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n))
+	linear : 일정한 속도로 변화
+	ease : 천천히 시작한후 중간에 가속하다가 감속하면서 끝남
+	ease-in : 천천히 시작한후 가속됨
+	ease-out : 고속으로 시작한후 감속하면서 끝남
+	ease-in-out : 천천히 시작한후 서서히 가속하다가 감속하면서 끝남
+	cubic-bezier(n,n,n,n) : 3차 베지어 속선을 사용하여 지정
+	transition-delay : 속성 변화가 시작되는 시점을 늦추는 속성. 시간의 단위는 초(s), 밀리초(ms)
+
+	3. Example
+	transition-property:width;
+	transition-duration:1s;
+	transition-timing-function:linear;
+	transition-delay:2s;
+	transition:width 1s linear 2s; /* 축약형 */
+
+▶Transforms
+	회전, 확대 및 축소, 기울임, 위치 변경 등 다양한 변형 효과 적용하는 것이며, 2D & 3D Transforms 으로 나누어 볼 수 있다.
+
+- 2D Transforms
+	1. Summary
+	2D Transforms 에서 정의할 수 있는 메소드는 아래와 같다.
+	이동 : translate(), translateX(), translateY()
+	확대 및 축소 : scale(), scaleX(), scaleY()
+	기울임 : skew(), skewX(), skewY()
+	변환 행렬(위 4가지 변환을 한번에 지정) : matrix()
+
+	2. Syntax
+	translate(x,y) : X,Y축의 방향으로 x,y만큼 이동 시킴
+	translate(x) : X축의 방향으로 x만큼 이동 시킴
+	translate(y) : Y축의 방향으로 y만큼 이동 시킴
+	scale(x,y) : X,Y축의 방향으로 x,y만큼 확대 및 축소 시킴
+	scale(x) : X축의 방향으로 x만큼 확대 및 축소 시킴
+	scale(y) : Y축의 방향으로 y만큼 확대 및 축소 시킴
+	rotate(angle) : 지정한 각도만큼 회전 시킴
+	skew(x-angle,y-angle) : X,Y축의 방향으로 x-angle,y-angle 만큼 기울임
+	skew(x-angle) : X축의 방향으로 x-angle 만큼 기울임
+	skew(y-angle) : Y축의 방향으로 y-angle 만큼 기울임
+	matrix(n,n,n,n,n,n) : translate, scale, rotate, skew 속성을 한번에 지정
+
+	3. Example
+	transform:translate(50px,100px);
+	transform:scale(2,4);
+	transform:rotate(30deg);
+	transform:skew(30deg,20deg);
+	transform:matrix(1,-0.2,0,1,0,0);
+	transform:translate(50px,100px) rotate(30deg) scale(2,4);
+	/* 여러 변형 효과를 띄어쓰기로 구분하여 동시에 적용 (맨 앞에 지정한 것부터 순차 적용됨) */
+
+- 3D Transforms
+	1. Summary
+	3D Transforms 에서 정의할 수 있는 메소드는 아래와 같다.
+	이동 : translate3d(), translateZ()
+	확대 및 축소 : scale3d(), scaleZ()
+	회전 : rotate3d(),rotateX(),rotateY(),rotateZ()
+	변환 행렬 : matrix()
+	투시도(원근감) : perspective()
+
+	2. Syntax
+	translate3d(x,y,z) : X,Y,Z축의 방향으로 지정한 값만큼 이동 시킴
+	scale3d(x,y,z) : 지정한 배율만큼 확대시킴
+	rotate3d(x,y,z,angle) : 지정한 각도만큼 회전 시킴
+	matrix(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) : translate, scale, rotate, skew 속성을 한번에 지정
+	perspective(n) : 원근감을 제어함. 값이 작을수록 가까이에서 보는 것 같이 느껴지며 3D 효과도 커짐
+
+	3. Example
+	text
+	transform:perspective(275) translate3d(16px, 30px, 59px) scale3d(1.35, 1.25, 1.5) rotate3d(23, 18, 41, 21deg);
+
+▶transform-origin
+	1. Summary
+	변형효과(transform) 기준점의 위치를 지정하는 속성
+	2차원 변형효과는 요소박스의 기본 중심점이 (50% 50%), 3차원 변형효과는 (50% 50% 0) 이다.
+
+	2. Syntax
+	transform-origin : x-axis y-axis z-axis;
+	x-axis : left / center / right / length / %
+	y-axis : left / center / right / length / %
+	z-axis : length
+
+	3. Example
+	transform:rotate(45deg);
+	transform-origin:20% 40%;
+
+▶transform-style
+	1. Summary
+	3차원 변형효과에서 부모 요소와 자식 요소를 관계를 지정하는 속성
+
+	2. Syntax
+	transform-style : flat | preserve-3d ;
+	flat : 부모 요소에 지정한 3차원 변형효과는 자식 요소에게 적용되지 않음.
+	preserve-3d : 부모 요소에 지정한 3차원 변형효과가 자식 요소에게도 적용됨.
+
+	3. Example
+	transform-style:preserve-3d;
+
+▶perspective
+	1. Summary
+	원근감을 표시할 수 있도록 시점의 거리를 지정하는 속성
+
+	2. Syntax
+	perspective : number | none;
+	number : 지정한 수치만큼 시점의 거리를 변경하며, 값이 클수록 요소가 작고 멀리보임. (음수값 지정 X)
+	none : 시점의 거리를 변경하지 않음
+
+	3. Example
+	perspective:500px;
+
+▶perspective-origin
+	1. Summary
+	perspective의 기준점을 지정하는 속성
+	기준점의 기본값은 (50% 50%) 이다.
+
+	2. Syntax
+	perspective-origin : x-axis y-axis;
+	x-axis : left / center / right / length / %
+	y-axis : left / center / right / length / %
+
+	3. Example
+	perspective:150px;
+	perspective-origin:10% 10%;
+
+▶Animations
+	1. Summary
+	'키프레임'을 지정하여 애니메이션 효과를 지정하는 속성
+
+	2. Syntax
+	animation-name : 설정된 keyframe을 지정함
+	keyframes
+	form :시작 프레임를 설정함
+	to : 종료 프레임를 설정함
+	중간의 키프레임을 %단위로 지정할수 있음
+	animation-direction : 키프레임의 연결 방향을 지정함. (기본값 :from(혹은 0%) ~ to(혹은 100%) 방향)
+	animation-duration : animation 실행되는 총 시간을 지정함.
+	animation-iteration-count : 애니메이션 반복 횟수를 지정함. (축약형 사용시 Quirks Mode에서 animation이 동작하지 않는 현상이 있으니 맨마지막에 위치)
+	animation-timing-function : 키프레임간 변화의 정도를 지정함. (기본값:ease)
+	animation-play-state : 애니메이션의 실행 상태를 지정함. running(기본값) 와 paused 값을 선택할 수 있음.
+	animation-delay : 애니메이션이 시작되기 전 대기시간을 지정함. (기본 값: 0, 즉시 시작)
+
+	3. Example
+	@keyframes myfirst
+	{
+	  from {background:red;}
+	  to {background:yellow;}
+	}
+	.box
+	{
+	  animation-name:myfirst;
+	  animation-duration:5s;
+	  animation-timing-function:linear;
+	  animation-delay:2s;
+	  animation-direction:alternate;
+	  animation-play-state:running;
+	  animation-iteration-count:infinite;
+	}
+	.box {animation: myfirst 5s linear 2s alternate infinite;} /* 축약형 */
+
+▶Multiple Columns
+	1. Summary
+	문장을 다단으로 표시함
+
+	2. Syntax
+	column-count : 단의 수을 지정하는 속성
+	column-width : 단의 폭을 지정하는 속성
+	column-gap : 단과 단 사이의 간격을 지정하는 속성
+	column-rule : 단과 단 사이의 구분선 지정하는 속성
+
+	3. Example
+	column-count:3;
+	column-gap:40px;
+	column-rule:3px outset #ff00ff;
+
+▶resize
+	1. Summary
+	요소의 크기를 사용자가 변경할 수 있도록 지정하는 속성
+
+	2. Syntax
+	resize : none | horizontal | vertical | both;
+	none : 크기를 변경할 수 없도록 지정
+	horizontal : 수평방향(너비)의 크기를 변경
+	vertical : 수직방향(높이)의 크기를 변경
+	both : 수평,수직방향 모두를 변경할 수 있도록 지정
+
+	3. Example
+	resize:both;
+
+▶box-sizing
+	1. Summary
+	요소박스의 너비 및 높이의 계산방법을 지정하는 속성
+
+	2. Syntax
+	box-sizing : content-box | padding-box | border-box;
+	content-box : width, height의 값이 padding, border 크기를 포함하지 않음 (CSS2.1 표준방법)
+	padding-box : width, height의 값이 padding 크기를 포함하지만 border 크기는 포함하지 않음
+	border-box : width,height의 값이 padding, border 크기를 포함함 (기존 IE 모드)
+
+	3. Example
+	box-sizing:border-box;
+
+▶outline
+	1. Summary
+	아웃라인과 테두리 사이의 간격을 지정하는 속성
+
+	outline-offset : length;
+	length : 테두리로부터의 거리
+	border:10px solid #ccc;
+	outline:2px solid red;
+	outline-offset:-20px;
+
+
+
+
+
+
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  css 약식속성
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+▶속성 값 축약 예
+	▷#555555 → #555
+	16 진수 컬러 코드값
+
+	▷#ff4400 → #f40
+	동일한 값으로 이루어진 16 진수 컬러 코드값은 세 자릿 수로 축약하여 사용한다.
+	단 인터넷 익스플로러 전용 속성인 CSS filter를 사용했을 경우 축약 속성을 인식하지 못하는
+	오류가 있기 때문에 속성 값을 축약하지 않는다.
+	backgroundposition:left center→background-position:0 50%
+	문자로 표현한 위치값은 숫자로 변경한다.
+
+	▷top:0px → top:0
+	속성 값이 0 일 경우 단위를 표시하지 않는다.
+
+	▷padding:20px 20px 20px 20px → padding:20px
+	▷margin:0 auto 0 auto → margin:0 auto
+	▷padding:20px 30px 50px 30px → padding:20px 30px 50px
+	▷border-color:#ccc #eee #ccc #eee → border-color:#ccc #eee
+	상, 우, 하, 좌의 속성 값이 동일하면 축약한다.
+
+▶border
+	속성 값은 border-width, border-style, border-color 순서로 선언한다.
+
+	▷작성 예
+	.class{border:1px solid #ccc}
+	.class_v1{border-color:#666}
+	.class_v2{border-style:dotted}
+	.class2 {border-top:1px solid #ccc}
+	.class2_v1{border-top-color:#666}
+	.class2_v2{border-top-style:dotted}
+
+	▷약식 속성 선언의 예
+	border:1px solid;border-color:#ddd #ddd #eee #eee
+	border:1px;border-style:solid dotted;bordercolor:#ddd #ddd #eee #eee
+
+▶background
+	속성 값은 background-color, background-image, background-repeat, background-position,
+	background-size, background-attachment, background-origin, background-clip 순서로 선언한다.
+
+	▷작성 예
+	.class{background:#ccc url(bg.gif) no-repeat}
+	.class_v1{background-position:0 -50px}
+	.class_v2{background-position:0 -100px}
+
+▶font
+	폰트 스타일은 약식 속성으로 선언하지 않는다.
+
+	아래와 같이 선언하면, font-weight:bold는 상속되지 않고 font 속성의 디폴트값인
+	font-weight:normal로 변경되기 때문에 불필요한 속성 값을 선언해야 하는 문제가 발생한다.
+
+	.class{font-weight:bold;font-size:12px;font-family:dotum}
+	.class p{font:15px gulim}
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  크로스브라우징 테스터환경 만들기★ vm이나 따른걸로 자신만의 환경을 만드세용
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  싱글클래스, 더블클래스★ 등 어떨때사용하나 확인
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+  less★ 사용법 자신만의 스타일로정리, 문법 등
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
